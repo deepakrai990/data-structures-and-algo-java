@@ -1,0 +1,15 @@
+## Notes
+
+![alt text](png/17_Modular_Arthmetic-01.png)
+![alt text](png/17_Modular_Arthmetic-02.png)
+![alt text](png/17_Modular_Arthmetic-03.png)
+![alt text](png/17_Modular_Arthmetic-04.png)
+![alt text](png/17_Modular_Arthmetic-05.png)
+![alt text](png/17_Modular_Arthmetic-06.png)
+![alt text](png/17_Modular_Arthmetic-07.png)
+![alt text](png/17_Modular_Arthmetic-08.png)
+![alt text](png/17_Modular_Arthmetic-09.png)
+![alt text](png/17_Modular_Arthmetic-10.png)
+![alt text](png/17_Modular_Arthmetic-11.png)
+![alt text](png/17_Modular_Arthmetic-12.png)
+![alt text](png/17_Modular_Arthmetic-13.png)

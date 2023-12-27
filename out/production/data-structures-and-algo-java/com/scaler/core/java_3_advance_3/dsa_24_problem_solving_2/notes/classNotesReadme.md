@@ -1,0 +1,1 @@
+![alt text](png/05_Arrays_Prefix_Sum-01.png)
