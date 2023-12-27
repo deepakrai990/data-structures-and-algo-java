@@ -1,0 +1,16 @@
+## Notes
+
+![alt text](png/27_Linkedlist_3-01.png)
+![alt text](png/27_Linkedlist_3-02.png)
+![alt text](png/27_Linkedlist_3-03.png)
+![alt text](png/27_Linkedlist_3-04.png)
+![alt text](png/27_Linkedlist_3-05.png)
+![alt text](png/27_Linkedlist_3-06.png)
+![alt text](png/27_Linkedlist_3-07.png)
+![alt text](png/27_Linkedlist_3-08.png)
+![alt text](png/27_Linkedlist_3-09.png)
+![alt text](png/27_Linkedlist_3-10.png)
+![alt text](png/27_Linkedlist_3-11.png)
+![alt text](png/27_Linkedlist_3-12.png)
+![alt text](png/27_Linkedlist_3-13.png)
+![alt text](png/27_Linkedlist_3-14.png)

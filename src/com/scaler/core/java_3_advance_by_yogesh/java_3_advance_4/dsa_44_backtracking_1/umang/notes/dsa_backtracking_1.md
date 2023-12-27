@@ -1,0 +1,18 @@
+## Notes
+
+![alt text](png/41_DSA_Backtracking-01.png)
+![alt text](png/41_DSA_Backtracking-02.png)
+![alt text](png/41_DSA_Backtracking-03.png)
+![alt text](png/41_DSA_Backtracking-04.png)
+![alt text](png/41_DSA_Backtracking-05.png)
+![alt text](png/41_DSA_Backtracking-06.png)
+![alt text](png/41_DSA_Backtracking-07.png)
+![alt text](png/41_DSA_Backtracking-08.png)
+![alt text](png/41_DSA_Backtracking-09.png)
+![alt text](png/41_DSA_Backtracking-10.png)
+![alt text](png/41_DSA_Backtracking-11.png)
+![alt text](png/41_DSA_Backtracking-12.png)
+![alt text](png/41_DSA_Backtracking-13.png)
+![alt text](png/41_DSA_Backtracking-14.png)
+![alt text](png/41_DSA_Backtracking-15.png)
+![alt text](png/41_DSA_Backtracking-16.png)

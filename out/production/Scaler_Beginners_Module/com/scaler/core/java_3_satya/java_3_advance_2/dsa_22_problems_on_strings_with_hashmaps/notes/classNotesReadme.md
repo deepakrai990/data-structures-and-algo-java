@@ -1,0 +1,6 @@
+![alt text](png/22_Advanced_DSA-Problems_on_Strings_with_Hashmaps-1.png)
+![alt text](png/22_Advanced_DSA-Problems_on_Strings_with_Hashmaps-2.png)
+![alt text](png/22_Advanced_DSA-Problems_on_Strings_with_Hashmaps-3.png)
+![alt text](png/22_Advanced_DSA-Problems_on_Strings_with_Hashmaps-4.png)
+![alt text](png/22_Advanced_DSA-Problems_on_Strings_with_Hashmaps-5.png)
+![alt text](png/22_Advanced_DSA-Problems_on_Strings_with_Hashmaps-6.png)

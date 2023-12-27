@@ -1,0 +1,37 @@
+package com.scaler.core.java_1_beginner.intro_06_patterns2;
+
+import java.util.Scanner;
+
+/**
+ * @created 06/08/22 7:14 pm
+ * @project Scaler_Beginners_Module
+ * @author Deepak Kumar Rai
+ */
+public class PatterQuestion4 {
+    /**
+     * Print Pattern
+     *
+     * *********
+     *  *******
+     *   *****
+     *    ***
+     *     *
+     *
+     * input n = 5
+     * **/
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        for (int r = 0; r < n; r++) {
+            int starCount = 2 * (n - r) - 1;
+            int spaceCount = r;
+            for (int space = 1; space <= spaceCount; space++) {
+                System.out.print(" ");
+            }
+            for (int star = 1; star <= starCount; star++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}

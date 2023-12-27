@@ -1,0 +1,117 @@
+### Q3. Subarrays with Bitwise OR 1
+#### Problem Description
+```text
+Given an array B of length A with elements 1 or 0. Find the number 
+of subarrays such that the bitwise OR of all the elements present 
+in the subarray is 1.
+```
+#### Problem Constraints
+<div style="background-color: #f9f9f9; padding: 5px 10px;">
+    1 &lt;= A &lt;= 10<sup>5</sup>
+</div>
+
+```text
+1 <= A <= 10^5
+```
+#### Input Format
+```text
+The first argument is a single integer A.
+The second argument is an integer array B.
+```
+#### Output Format
+```text
+Return the number of subarrays with bitwise array 1.
+```
+#### Example Input
+```text
+Input 1:
+ A = 3
+ B = [1, 0, 1]
+
+Input 2:
+ A = 2
+ B = [1, 0]
+```
+#### Example Output
+```text
+Output 1:
+ 5
+
+Output2:
+ 2
+```
+#### Example Explanation
+```text
+Explanation 1:
+    The subarrays are :- [1], [0], [1], [1, 0], [0, 1], [1, 0, 1]
+    Except the subarray [0] all the other subarrays has a Bitwise OR = 1
+
+Explanation 2:
+    The subarrays are :- [1], [0], [1, 0]
+    Except the subarray [0] all the other subarrays has a Bitwise OR = 1
+```
+### Hints
+* Hint 1
+```text
+Since the operation is a bitwise OR any subarray 
+with at least one element as 1 will have bitwise or 1.
+
+Well every subarray has a unique pair of left and right 
+end indices. 
+
+Now for every index i in the array find in how many subarrays 
+with bitwise OR 1, it is the right index of. And add 
+this value to ans.
+```
+* Solution Approach
+```text
+Since the operation is a bitwise OR any subarray 
+with at least one element as 1 will have bitwise or 1.
+
+Well every subarray has a unique pair of left and 
+right end indices. 
+
+Now for every index i in the array find in how many subarrays 
+with bitwise OR 1, it is the right index of. And add 
+this value to ans.
+
+We can find this by searching how many valid left index is present 
+if current index i is taken as right index.
+
+If j is the first index that has B[j] = 1 to 
+the left of i (including i), then index 1 to j all can be 
+taken as left index as there is at least one 1 is the subarray. 
+so ans += j for that particular i.
+```
+* Complete Solution
+* * Solution in Java
+```java
+public class Solution {
+    public long solve(int A, int[] B) {
+        int last = 0;
+        long ans = 0;
+        for (int i = 0; i < A; i++) {
+            if (B[i] == 1) last = i + 1;
+            ans += last;
+        }
+        return ans;
+    }
+}
+```
+* * Solution in Javascript
+```javascript
+/** Not available **/
+```
+* * Solution in C++
+```cpp
+long Solution::solve(int A, vector<int> &B) {
+    int last=0;
+    long ans=0;
+    for(int i=0;i<A;i++){
+        if(B[i]==1)last=i+1;
+        ans += last;
+    }
+    return ans;
+}
+```
+

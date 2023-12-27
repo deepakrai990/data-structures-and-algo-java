@@ -1,0 +1,15 @@
+## Notes
+
+![alt text](png/26_Problem_Solving_3-01.png)
+![alt text](png/26_Problem_Solving_3-02.png)
+![alt text](png/26_Problem_Solving_3-03.png)
+![alt text](png/26_Problem_Solving_3-04.png)
+![alt text](png/26_Problem_Solving_3-05.png)
+![alt text](png/26_Problem_Solving_3-06.png)
+![alt text](png/26_Problem_Solving_3-07.png)
+![alt text](png/26_Problem_Solving_3-08.png)
+![alt text](png/26_Problem_Solving_3-09.png)
+![alt text](png/26_Problem_Solving_3-10.png)
+![alt text](png/26_Problem_Solving_3-11.png)
+![alt text](png/26_Problem_Solving_3-12.png)
+![alt text](png/26_Problem_Solving_3-13.png)

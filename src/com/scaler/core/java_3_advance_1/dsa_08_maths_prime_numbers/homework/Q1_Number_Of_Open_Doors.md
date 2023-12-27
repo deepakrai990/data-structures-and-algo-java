@@ -1,0 +1,141 @@
+### Q2. Number Of Open Doors
+#### Problem Description
+```text
+Given an integer A, which denotes the number of doors in a 
+row numbered 1 to A. All the doors are closed initially.
+
+A person moves to and fro, changing the states of the doors 
+as follows: the person opens a door that is already closed and 
+closes a door that is already opened.
+
+In the first go, he/she alters the states of doors 
+    numbered 1, 2, 3, … , A.
+
+In the second go, he/she alters the states of doors 
+    numbered 2, 4, 6 ….
+
+In the third go, he/she alters the states of doors 
+    numbered 3, 6, 9 …
+
+This continues till the A th go in, which you alter 
+the state of the door numbered A.
+
+Find and return the number of open doors at the end of the procedure.
+```
+#### Problem Constraints
+
+* <p>1 &lt;= A &lt;= 10<sup>9</sup></p>
+
+```text
+1 <= A <= 10^9
+```
+#### Input Format
+```text
+The only argument given is integer A.
+```
+#### Output Format
+```text
+Return the number of open doors at the end of the procedure.
+```
+#### Example Input
+```text
+Input 1:
+ A = 5
+
+Input 2:
+ A = 6
+```
+#### Example Output
+```text
+Output 1:
+ 2
+
+Output 2:
+ 2 
+```
+#### Example Explanation
+```text
+Input 1:
+
+ In the first go, he/she alters the states of doors 
+ numbered 1, 2, 3, 4, 5. Now, all doors are open.
+ 
+ In the second go, he/she closes the doors numbered 2, 4.
+ 
+ In the third go, he/she closes the door numbered 3.
+ 
+ In the fourth go, he/she open the door numbered 4.
+ 
+ In the fifth go, he/she closes the door numbered 5.
+ 
+ Doors opened at the end are 1 and 4.
+
+Input 2:
+
+ In the first go, he/she alters the states of doors numbered 1, 2, 3, 4, 5, 6. Now, all doors are open.
+ 
+ In the second go, he/she closes the doors numbered 2, 4, 6.
+ 
+ In the third go, he/she closes the door numbered 3 and opens door 6.
+ 
+ In the fourth go, he/she open the door numbered 4.
+ 
+ In the fifth go, he/she closes the door numbered 5.
+ 
+ In the sixth go, he/she closes the door numbered 6.
+ 
+ Doors opened at the end are 1 and 4.
+```
+### Hints
+* Hint 1
+```text
+Find the number of times the state of a door will change.
+```
+* Solution Approach
+```text
+We observe that the number of time a door X alter its state is 
+the number of factors of that door X.
+
+If the number of factors is even, then the door will be 
+closed; else, it will be open.
+
+So, we need to find the numbers between 1 to A for which the 
+number of factors is odd.
+
+This leads to a very interesting observation that only the 
+number which is perfect square has an odd number of factors.
+How?
+If ‘a’ is a factor of ‘X’, then there will be a ‘b’ such 
+that ‘a’ * ‘b’ = X.
+Only a number that is perfectly square has a factor ‘a’ 
+such that ‘a’ * ‘a’ = X.
+
+So we will count the number of perfect squares between 1 and A, 
+and that will be sqrt(A).
+```
+* Complete Solution
+```java
+public class Solution {
+    public int solve(int A) {
+        // find the square root of A
+        return (int)Math.sqrt(A);
+    }
+}
+```
+
+```javascript
+module.exports = {
+    solve: function (A) {
+        // find the square root of A
+        return Math.floor(Math.sqrt(A));
+    },
+};
+```
+
+```cpp
+int Solution::solve(int A) {
+    // find the square root of A
+    return sqrt(A);
+}
+```
+

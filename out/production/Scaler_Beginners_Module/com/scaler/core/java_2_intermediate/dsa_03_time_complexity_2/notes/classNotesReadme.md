@@ -1,0 +1,16 @@
+## Notes
+
+![alt text](png/03_Time_Complexity_2-01.png)
+![alt text](png/03_Time_Complexity_2-02.png)
+![alt text](png/03_Time_Complexity_2-03.png)
+![alt text](png/03_Time_Complexity_2-04.png)
+![alt text](png/03_Time_Complexity_2-05.png)
+![alt text](png/03_Time_Complexity_2-06.png)
+![alt text](png/03_Time_Complexity_2-07.png)
+![alt text](png/03_Time_Complexity_2-08.png)
+![alt text](png/03_Time_Complexity_2-09.png)
+![alt text](png/03_Time_Complexity_2-10.png)
+![alt text](png/03_Time_Complexity_2-11.png)
+![alt text](png/03_Time_Complexity_2-12.png)
+![alt text](png/03_Time_Complexity_2-13.png)
+![alt text](png/03_Time_Complexity_2-14.png)

@@ -1,0 +1,17 @@
+## Notes
+
+![alt text](png/39_dsa_Heaps-01.png)
+![alt text](png/39_dsa_Heaps-02.png)
+![alt text](png/39_dsa_Heaps-03.png)
+![alt text](png/39_dsa_Heaps-04.png)
+![alt text](png/39_dsa_Heaps-05.png)
+![alt text](png/39_dsa_Heaps-06.png)
+![alt text](png/39_dsa_Heaps-07.png)
+![alt text](png/39_dsa_Heaps-08.png)
+![alt text](png/39_dsa_Heaps-09.png)
+![alt text](png/39_dsa_Heaps-10.png)
+![alt text](png/39_dsa_Heaps-11.png)
+![alt text](png/39_dsa_Heaps-12.png)
+![alt text](png/39_dsa_Heaps-13.png)
+![alt text](png/39_dsa_Heaps-14.png)
+![alt text](png/39_dsa_Heaps-15.png)
