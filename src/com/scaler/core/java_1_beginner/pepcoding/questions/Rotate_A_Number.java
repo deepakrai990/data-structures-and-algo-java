@@ -45,5 +45,6 @@ public class Rotate_A_Number {
 
         int rotatedNumber = remainder * multiplier + quotient;
         System.out.println(rotatedNumber);
+        in.close();
     }
 }

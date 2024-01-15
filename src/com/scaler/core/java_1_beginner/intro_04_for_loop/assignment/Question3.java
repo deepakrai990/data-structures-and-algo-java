@@ -82,5 +82,6 @@ public class Question3 {
         } else {
             System.out.print("NO");
         }
+        in.close();
     }
 }

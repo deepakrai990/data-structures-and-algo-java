@@ -85,5 +85,6 @@ public class PatternQuestionHomeWork {
             }
             System.out.println();
         }
+        in.close();
     }
 }

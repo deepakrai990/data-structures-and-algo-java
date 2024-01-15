@@ -20,7 +20,7 @@ public class Q5_Count_Sort {
 
         int[] count = new int[max + 1];
 
-        // Initialize count array with all zeros.
+        // Initialize a count array with all zeros.
         for (int i = 0; i < max; ++i) {
             count[i] = 0;
         }
@@ -30,19 +30,19 @@ public class Q5_Count_Sort {
             count[A[i]]++;
         }
 
-        // Store the cummulative count of each array
+        // Store the cumulative count of each array
         for (int i = 1; i <= max; i++) {
             count[i] += count[i - 1];
         }
 
-        // Find the index of each element of the original array in count array, and
-        // place the elements in output array
+        // Find the index of each element of the original array in a count array, and
+        // place the elements in the output array
         for (int i = size - 1; i >= 0; i--) {
             output[count[A[i]] - 1] = A[i];
             count[A[i]]--;
         }
 
-        // Copy the sorted elements into original array
+        // Copy the sorted elements into an original array
         for (int i = 0; i < size; i++) {
             A[i] = output[i];
         }

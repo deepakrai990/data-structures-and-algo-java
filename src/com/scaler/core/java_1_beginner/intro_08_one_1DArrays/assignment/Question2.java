@@ -79,5 +79,6 @@ public class Question2 {
         }
         int[] maxAndMin = findMaxAndMin(arr);
         System.out.print(maxAndMin[0] + " " + maxAndMin[1]);
+        in.close();
     }
 }

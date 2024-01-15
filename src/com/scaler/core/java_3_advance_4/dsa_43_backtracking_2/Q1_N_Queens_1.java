@@ -9,7 +9,7 @@ public class Q1_N_Queens_1 {
     /**
      * Question 1
      * Given matrix mat[N][N]. Print all valid placements of N queens such that no queen can kill each others
-     * Note: If two queens are present in the same row/ column / diagonal, they will kill each other.
+     * Note: If two queens are present in the same row / column / diagonal, they will kill each other.
      * **/
     private static void NQueens(int[][] mat, int N, int i) {
         if (i == N) {

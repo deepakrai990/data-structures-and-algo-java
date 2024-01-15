@@ -42,7 +42,8 @@ public class PatterQuestion8HomeWork {
             for (int k = 1; k <= i; k++) {
                 System.out.print("*");
             }
-            System.out.println("");
+            System.out.println();
         }
+        in.close();
     }
 }

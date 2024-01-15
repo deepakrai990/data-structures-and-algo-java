@@ -108,5 +108,6 @@ public class Question2 {
             }
         }
         printWaveForm_RowWise(mat);
+        scn.close();
     }
 }

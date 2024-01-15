@@ -61,5 +61,6 @@ public class Question1 {
             System.out.print(i + " ");
             i = i + 1;
         }
+        input.close();
     }
 }

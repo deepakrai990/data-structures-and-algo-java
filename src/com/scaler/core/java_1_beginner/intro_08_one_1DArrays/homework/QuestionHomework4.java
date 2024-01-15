@@ -139,5 +139,6 @@ public class QuestionHomework4 {
             }
             System.out.println();
         }
+        sc.close();
     }
 }

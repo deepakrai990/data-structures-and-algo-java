@@ -19,5 +19,6 @@ public class ReverseANumber {
         }
         System.out.println();
         System.out.println(result);
+        scn.close();
     }
 }

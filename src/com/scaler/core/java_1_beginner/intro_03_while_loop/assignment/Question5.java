@@ -60,5 +60,6 @@ public class Question5 {
             System.out.print(N + " ");
             N = N - 1;
         }
+        input.close();
     }
 }

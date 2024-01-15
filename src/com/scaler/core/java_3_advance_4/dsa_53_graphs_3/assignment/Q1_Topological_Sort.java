@@ -1,16 +1,18 @@
 package com.scaler.core.java_3_advance_4.dsa_53_graphs_3.assignment;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
 /**
+ * @author Deepak Kumar Rai
  * @created 01/04/23 11:55 pm
  * @project scaler_course_code
- * @author Deepak Kumar Rai
  */
 public class Q1_Topological_Sort {
-    public int[] solve(int A, int[][] B) {
+    private static int[] solve(int A, int[][] B) {
         List<List<Integer>> adjList = new ArrayList<>();
         for (int i = 0; i <= A; i++) {
             adjList.add(new ArrayList<>());
@@ -51,5 +53,13 @@ public class Q1_Topological_Sort {
                 return new int[0];
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        int A = 6;
+        int[][] B = {{6, 3}, {6, 1}, {5, 1}, {5, 2}, {3, 4}, {4, 2},};
+
+        int[] results = solve(A, B);
+        PrintUtils.print(results);
     }
 }

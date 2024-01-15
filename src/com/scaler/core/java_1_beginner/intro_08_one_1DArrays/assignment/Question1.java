@@ -92,5 +92,6 @@ public class Question1 {
         for(int i = 0; i < N + 1; i++) {
             System.out.print(arrNew[i] + " ");
         }
+        in.close();
     }
 }

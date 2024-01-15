@@ -72,5 +72,6 @@ public class QuestionHomeWork1 {
             i = i + 2;
         }
         System.out.print(totalOddSum);
+        input.close();
     }
 }

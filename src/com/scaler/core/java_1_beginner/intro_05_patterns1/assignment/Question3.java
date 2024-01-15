@@ -77,5 +77,6 @@ public class Question3 {
             }
             System.out.println();
         }
+        in.close();
     }
 }

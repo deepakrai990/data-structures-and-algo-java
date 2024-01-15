@@ -45,6 +45,6 @@ public class PatterQuestion5 {
             }
             System.out.println();
         }
-
+        in.close();
     }
 }

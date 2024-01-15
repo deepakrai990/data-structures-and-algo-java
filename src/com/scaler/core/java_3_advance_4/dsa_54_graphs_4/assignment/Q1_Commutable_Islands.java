@@ -1,5 +1,7 @@
 package com.scaler.core.java_3_advance_4.dsa_54_graphs_4.assignment;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -10,17 +12,16 @@ import java.util.PriorityQueue;
  * @author Deepak Kumar Rai
  */
 public class Q1_Commutable_Islands {
-    class Pair {
+     static class Pair {
         Integer nodeVal;
         Integer weight;
-
         public Pair(Integer n, Integer w) {
             nodeVal = n;
             weight = w;
         }
     }
 
-    public int solve(int A, int[][] B) {
+    private static int solve(int A, int[][] B) {
         List<List<Pair>> adj = new ArrayList<>();
         boolean[] visited = new boolean[A + 1];
         for (int i = 0; i <= A; i++)
@@ -52,5 +53,13 @@ public class Q1_Commutable_Islands {
             }
         }
         return minCost;
+    }
+
+    public static void main(String[] args) {
+        int A = 4;
+        int[][] B = {{1, 2, 1}, {2, 3, 4}, {1, 4, 3}, {4, 3, 2}, {1, 3, 10},};
+
+        int result = solve(A, B);
+        PrintUtils.print(result);
     }
 }

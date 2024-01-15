@@ -61,5 +61,6 @@ public class Question2 {
             }
         }
         System.out.print(factorCount);
+        in.close();
     }
 }

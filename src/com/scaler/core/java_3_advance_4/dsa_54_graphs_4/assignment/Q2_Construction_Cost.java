@@ -1,5 +1,7 @@
 package com.scaler.core.java_3_advance_4.dsa_54_graphs_4.assignment;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.*;
 
 /**
@@ -8,17 +10,16 @@ import java.util.*;
  * @author Deepak Kumar Rai
  */
 public class Q2_Construction_Cost {
-    class Pair {
+    static class Pair {
         int node;
         int weight;
-
         Pair(int N, int W) {
             this.node = N;
             this.weight = W;
         }
     }
-
-    public int solve(int A, int[][] B) {
+    @SuppressWarnings("unchecked")
+    private static int solve(int A, int[][] B) {
         ArrayList<Pair>[] graph = new ArrayList[A + 1];
         int i, j;
         int mod = 1000000007;
@@ -32,7 +33,7 @@ public class Q2_Construction_Cost {
         for (i = 0; i <= A; i++) {
             graph[i] = new ArrayList<Pair>();
         }
-        // Add All Options in Adjancancy List from Matrix
+        // Add All Options in Adjacency List from Matrix
         for (i = 0; i < row; i++) {
             for (j = 0; j < col; j++) {
                 // Undirected Graph so Add like
@@ -49,13 +50,11 @@ public class Q2_Construction_Cost {
                 return p1.weight - p2.weight;
             }
         });
-
-        // Add first Pair in min minHeap
+        // Add the first Pair in min minHeap
         for (Pair p : graph[1]) {
             minHeap.add(p);
         }
         int minCost = 0;
-
         while (!minHeap.isEmpty()) {
             Pair top = minHeap.poll();
             if (!visited[top.node]) {
@@ -71,5 +70,13 @@ public class Q2_Construction_Cost {
             }
         }
         return minCost;
+    }
+
+    public static void main(String[] args) {
+        int A = 3;
+        int[][] B = {{1, 2, 14}, {2, 3, 7}, {3, 1, 2},};
+
+        int result = solve(A, B);
+        PrintUtils.print(result);
     }
 }

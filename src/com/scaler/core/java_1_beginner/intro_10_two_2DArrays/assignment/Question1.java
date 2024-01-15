@@ -107,5 +107,6 @@ public class Question1 {
             }
         }
         printWaveForm_ColumnWise(mat);
+        scn.close();
     }
 }

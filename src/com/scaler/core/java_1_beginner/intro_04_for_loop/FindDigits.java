@@ -18,6 +18,8 @@ public class FindDigits {
         System.out.println("--------------------------");
         findSumOfLastDigits(N);
         System.out.println("--------------------------");
+        input.close();
+        input.close();
     }
 
     public static void findDigit(int N) {

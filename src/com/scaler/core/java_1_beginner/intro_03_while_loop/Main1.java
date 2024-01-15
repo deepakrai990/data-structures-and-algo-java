@@ -188,8 +188,8 @@ public class Main1 {
         **/
         int a = scn.nextInt();
         int b = scn.nextInt();
-        int c = scn.nextInt();
-        int d = scn.nextInt();
+        // int c = scn.nextInt();
+        // int d = scn.nextInt();
 
         if(a == 1) {
             System.out.println("january");
@@ -198,5 +198,6 @@ public class Main1 {
         if(b == 6) {
             System.out.println("june");
         }
+        scn.close();
     }
 }

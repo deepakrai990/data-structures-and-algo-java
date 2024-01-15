@@ -1,6 +1,6 @@
 package com.scaler.core.java_3_advance_1.dsa_03_arrays_3.assignment;
 
-import com.scaler.core.java_3_advance_by_yogesh.java_3_advance_1.dsa_03_arrays_3_interview_problems.assignment.model.Interval;
+import com.scaler.core.java_3_advance_1.dsa_03_arrays_3.model.Interval;
 
 import java.util.ArrayList;
 import java.util.stream.Collectors;

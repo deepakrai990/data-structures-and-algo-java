@@ -31,5 +31,6 @@ public class QuestionHomework4Solution {
 
             System.out.println(v + " " + c);
         }
+        scn.close();
     }
 }

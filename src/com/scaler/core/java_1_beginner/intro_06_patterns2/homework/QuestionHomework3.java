@@ -93,5 +93,6 @@ public class QuestionHomework3 {
             }
             System.out.println();
         }
+        in.close();
     }
 }

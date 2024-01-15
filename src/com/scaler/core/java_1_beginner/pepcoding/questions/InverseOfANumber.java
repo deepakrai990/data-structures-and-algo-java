@@ -44,6 +44,7 @@ public class InverseOfANumber {
         }
         printPositionAndValue(true, "Original");
         System.out.println(inverse);
+        in.close();
     }
     private static void printPositionAndValue(boolean isSingleLine, String positionName) {
         if (isSingleLine) {

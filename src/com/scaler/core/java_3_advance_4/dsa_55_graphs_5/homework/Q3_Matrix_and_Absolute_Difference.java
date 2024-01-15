@@ -1,15 +1,17 @@
 package com.scaler.core.java_3_advance_4.dsa_55_graphs_5.homework;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
+ * @author Deepak Kumar Rai
  * @created 01/04/23 11:39 pm
  * @project scaler_course_code
- * @author Deepak Kumar Rai
  */
 public class Q3_Matrix_and_Absolute_Difference {
-    class Coordinate {
+    static class Coordinate {
         int i;
         int j;
 
@@ -19,15 +21,15 @@ public class Q3_Matrix_and_Absolute_Difference {
         }
     }
 
-    int row[] = {-1, 1, 0, 0};
-    int col[] = {0, 0, -1, 1};
+    int[] row = {-1, 1, 0, 0};
+    int[] col = {0, 0, -1, 1};
 
-    public int solve(int A, int B, int[][] C) {
+    private int solve(int A, int B, int[][] C) {
         int left = 0, right = (int) 1e9;
         int ans = -1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            if (PossibleToVisitAll(mid, C)) {
+            if (PossibleToVisitAll(mid, A, B, C)) {
                 ans = mid;
                 right = mid - 1;
             } else {
@@ -37,9 +39,9 @@ public class Q3_Matrix_and_Absolute_Difference {
         return ans;
     }
 
-    private boolean PossibleToVisitAll(int diff, int[][] C) {
+    private boolean PossibleToVisitAll(int diff, int A, int B, int[][] C) {
         Queue<Coordinate> queue = new LinkedList<>();
-        boolean[][] visited = new boolean[C.length][C[0].length];
+        boolean[][] visited = new boolean[A][B];
         queue.add(new Coordinate(0, 0));
         visited[0][0] = true;
         while (!queue.isEmpty()) {
@@ -62,5 +64,15 @@ public class Q3_Matrix_and_Absolute_Difference {
             }
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        int A = 3;
+        int B = 3;
+        int[][] C = {{1, 5, 6}, {10, 7, 2}, {3, 6, 9}};
+
+        Q3_Matrix_and_Absolute_Difference solution = new Q3_Matrix_and_Absolute_Difference();
+        int result = solution.solve(A, B, C);
+        PrintUtils.print(result);
     }
 }

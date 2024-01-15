@@ -33,5 +33,6 @@ public class PatterQuestion3 {
             }
             System.out.println();
         }
+        in.close();
     }
 }

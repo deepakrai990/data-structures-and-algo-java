@@ -66,5 +66,6 @@ public class Question3 {
         }
         int result = sumOfArray(arr);
         System.out.print(result);
+        in.close();
     }
 }

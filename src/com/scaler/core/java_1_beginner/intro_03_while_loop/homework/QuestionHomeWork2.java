@@ -78,5 +78,6 @@ public class QuestionHomeWork2 {
             B = B - 1;
         }
         System.out.print(result);
+        input.close();
     }
 }

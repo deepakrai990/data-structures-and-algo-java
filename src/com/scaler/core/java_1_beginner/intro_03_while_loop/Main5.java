@@ -33,5 +33,6 @@ public class Main5 {
             System.out.println(i1);
             i1 = i1 + 2;
         }
+        input.close();
     }
 }

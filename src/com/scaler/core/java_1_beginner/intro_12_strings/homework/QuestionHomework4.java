@@ -76,5 +76,6 @@ public class QuestionHomework4 {
             }
             System.out.println(vowels + " " + consonant);
         }
+        in.close();
     }
 }

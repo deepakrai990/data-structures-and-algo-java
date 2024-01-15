@@ -32,5 +32,6 @@ public class PatterQuestion7 {
             }
             System.out.println();
         }
+        in.close();
     }
 }

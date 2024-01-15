@@ -19,5 +19,6 @@ public class QuestionHomework1 {
             A = temp;
         }
         System.out.println("hcf = " + A);
+        in.close();
     }
 }

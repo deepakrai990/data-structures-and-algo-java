@@ -86,5 +86,6 @@ public class QuestionHomeWork6 {
             }
             i = i + 1;
         }
+        input.close();
     }
 }

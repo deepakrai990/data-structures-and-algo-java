@@ -73,6 +73,7 @@ public class Q2_Auto_Complete {
                 search(searchwords[i], root);
             }
         }
+        scanner.close();
     }
 
     public static void insert(String word, Node root, int wt) {

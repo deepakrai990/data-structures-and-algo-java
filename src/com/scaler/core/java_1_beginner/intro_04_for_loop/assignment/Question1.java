@@ -80,5 +80,6 @@ public class Question1 {
                 firstDigit = firstDigit / 10;
             System.out.println(firstDigit + " " + lastDigit);
         }
+        input.close();
     }
 }

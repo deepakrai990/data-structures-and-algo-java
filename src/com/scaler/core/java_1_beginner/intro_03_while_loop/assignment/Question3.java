@@ -63,5 +63,6 @@ public class Question3 {
             i = i + 1;
         }
         System.out.print(total);
+        input.close();
     }
 }

@@ -1,5 +1,7 @@
 package com.scaler.core.java_3_advance_4.dsa_53_graphs_3.assignment;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -10,7 +12,7 @@ import java.util.PriorityQueue;
  * @author Deepak Kumar Rai
  */
 public class Q2_Possibility_of_Finishing {
-    public int solve(int A, int[] B, int[] C) {
+    private static int solve(int A, int[] B, int[] C) {
         List<List<Integer>> adjList = new ArrayList<>();
         for (int i = 0; i <= A; i++) {
             adjList.add(new ArrayList<>());
@@ -48,5 +50,14 @@ public class Q2_Possibility_of_Finishing {
                 return 0;
         }
         return 1;
+    }
+
+    public static void main(String[] args) {
+        int A = 3;
+        int[] B = {1, 2};
+        int[] C = {2, 3};
+
+        int result = solve(A, B, C);
+        PrintUtils.print(result);
     }
 }

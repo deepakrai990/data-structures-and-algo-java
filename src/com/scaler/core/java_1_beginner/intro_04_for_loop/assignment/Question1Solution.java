@@ -22,5 +22,6 @@ public class Question1Solution {
             }
             System.out.println(first + " " + last);
         }
+        scn.close();
     }
 }

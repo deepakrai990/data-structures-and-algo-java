@@ -95,5 +95,6 @@ public class QuestionHomeWork3 {
             System.out.println(N + " * " + i + " = " + (N * i));
             i = i + 1;
         }
+        input.close();
     }
 }

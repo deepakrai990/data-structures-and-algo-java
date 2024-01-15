@@ -101,7 +101,7 @@ public class Main {
         // 	System.out.print(res[i] + " ");
         // }
         doubt();
-
+        scn.close();
     }
 
     public static void doubt() {

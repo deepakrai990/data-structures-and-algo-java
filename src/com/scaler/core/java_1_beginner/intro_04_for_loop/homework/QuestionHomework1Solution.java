@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author Deepak Kumar Rai
  */
 public class QuestionHomework1Solution {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
@@ -21,5 +21,6 @@ public class QuestionHomework1Solution {
             i++;
         }
         System.out.print(ans);
+        sc.close();
     }
 }

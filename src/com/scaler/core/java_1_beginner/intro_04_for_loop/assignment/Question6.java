@@ -14,6 +14,7 @@ public class Question6 {
         System.out.println("A========= " + A);
         int result = reverse(A);
         System.out.println(result);
+        in.close();
     }
     public static int reverse(int A) {
         int result = 0;

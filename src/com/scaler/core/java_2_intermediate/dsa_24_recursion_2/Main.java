@@ -11,14 +11,14 @@ public class Main {
         if(n == 1) {
             return 0;
         }
-        int parent = solve(n - 1, (long) (k + 1l) / 2l);
-        if(k % 2l == 0l) {
+        int parent = solve(n - 1, (long) (k + 1L) / 2L);
+        if(k % 2L == 0L) {
             return parent == 1 ? 1 : 0;
         } else {
             return parent;
         }
     }
-    public int kthGrammar(int n, int k) {
+    private static int kthGrammar(int n, int k) {
         if(n == 1) {
             return 0;
         }
@@ -34,6 +34,9 @@ public class Main {
         int A = 2;
         int B = 1;
         int result = solve(A, (long) B);
+        System.out.println("Result : " + result);
+
+        result = kthGrammar(A, B);
         System.out.println("Result : " + result);
     }
 }

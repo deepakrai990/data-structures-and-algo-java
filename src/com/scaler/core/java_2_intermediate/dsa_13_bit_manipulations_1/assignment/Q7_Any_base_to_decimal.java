@@ -13,7 +13,7 @@ public class Q7_Any_base_to_decimal {
         while (A > 0) {
             int remainder = A % 10;
             A = A / 10;
-            ans_num += remainder * Math.pow(B, multiplier);
+            ans_num += (int) (remainder * Math.pow(B, multiplier));
             multiplier++;
         }
         return ans_num;

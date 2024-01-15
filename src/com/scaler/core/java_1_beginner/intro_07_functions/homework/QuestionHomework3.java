@@ -63,5 +63,6 @@ public class QuestionHomework3 {
         int A = in.nextInt();
         int result = solve(A);
         System.out.println(result);
+        in.close();
     }
 }

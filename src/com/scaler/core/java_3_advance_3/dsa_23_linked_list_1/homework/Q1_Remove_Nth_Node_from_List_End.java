@@ -17,7 +17,7 @@ public class Q1_Remove_Nth_Node_from_List_End {
             size++;
             t1 = t1.next;
         }
-        //formula "[ x=size-B-1 ]" for the starting of Linkedlist instead of last;
+        //formula "[ x=size-B-1 ]" for the starting of Linked list instead of last;
         if (B >= size) {
             A = A.next;
             return A;
@@ -28,5 +28,33 @@ public class Q1_Remove_Nth_Node_from_List_End {
             t2.next = t2.next.next;
         }
         return A;
+    }
+
+    public ListNode removeNthFromEnd1(ListNode head, int B) {
+        // Initialize slow and fast pointers
+        ListNode slow = head;
+        ListNode fast = head;
+
+        // Move fast pointer B+1 nodes ahead
+        for (int i = 0; i < B + 1; i++) {
+            // Handle the case where B is greater than or equal to the size of the list
+            if (fast == null) {
+                assert head != null;
+                return head.next; // Remove the first node
+            }
+            fast = fast.next;
+        }
+
+        // Move both pointers until fast reaches the end
+        while (fast != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        // Adjust pointers to skip the B-th node from the end
+        assert slow != null;
+        slow.next = slow.next.next;
+
+        return head;
     }
 }

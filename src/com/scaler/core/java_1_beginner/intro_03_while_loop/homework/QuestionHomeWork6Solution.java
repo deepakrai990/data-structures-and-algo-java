@@ -30,5 +30,6 @@ public class QuestionHomeWork6Solution {
                 }
             }
         }
+        scn.close();
     }
 }

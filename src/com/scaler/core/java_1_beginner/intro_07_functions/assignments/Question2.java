@@ -79,6 +79,7 @@ public class Question2 {
         int A = in.nextInt();
         int result = solve(A);
         System.out.println(result);
+        in.close();
     }
 
 }

@@ -68,5 +68,6 @@ public class QuestionHomework1 {
                 System.out.print(A[i] + " ");
             }
         }
+        in.close();
     }
 }

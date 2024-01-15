@@ -64,5 +64,6 @@ public class Question4 {
             System.out.print(i + " ");
             i = i + 2;
         }
+        input.close();
     }
 }

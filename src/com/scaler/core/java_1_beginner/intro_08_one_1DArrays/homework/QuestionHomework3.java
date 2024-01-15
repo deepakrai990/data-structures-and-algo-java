@@ -117,5 +117,6 @@ public class QuestionHomework3 {
             }
             System.out.println(Math.abs(evenCount - oddCount));
         }
+        in.close();
     }
 }

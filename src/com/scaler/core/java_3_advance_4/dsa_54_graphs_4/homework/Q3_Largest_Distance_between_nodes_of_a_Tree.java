@@ -1,5 +1,7 @@
 package com.scaler.core.java_3_advance_4.dsa_54_graphs_4.homework;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +13,7 @@ import java.util.List;
 public class Q3_Largest_Distance_between_nodes_of_a_Tree {
     private int diameter = 0;
 
-    public int solve(int[] A) {
+    private int solve(int[] A) {
         List<List<Integer>> adj = buildGraph(A);
         dfs(adj, 0);
         return diameter;
@@ -40,5 +42,13 @@ public class Q3_Largest_Distance_between_nodes_of_a_Tree {
             list.get(elem).add(i);
         }
         return list;
+    }
+
+    public static void main(String[] args) {
+        int[] A = {-1, 0, 0};
+
+        Q3_Largest_Distance_between_nodes_of_a_Tree solution = new Q3_Largest_Distance_between_nodes_of_a_Tree();
+        int result = solution.solve(A);
+        PrintUtils.print(result);
     }
 }

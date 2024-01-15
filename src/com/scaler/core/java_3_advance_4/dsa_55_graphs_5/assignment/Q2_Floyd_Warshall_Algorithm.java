@@ -1,12 +1,14 @@
 package com.scaler.core.java_3_advance_4.dsa_55_graphs_5.assignment;
 
+import com.scaler.core.utils.PrintUtils;
+
 /**
  * @created 01/04/23 11:37 pm
  * @project scaler_course_code
  * @author Deepak Kumar Rai
  */
 public class Q2_Floyd_Warshall_Algorithm {
-    public int[][] solve(int[][] A) {
+    private static int[][] solve(int[][] A) {
         int rows = A.length, cols = A[0].length;
         int[][] ans = new int[rows][cols];
 
@@ -35,7 +37,13 @@ public class Q2_Floyd_Warshall_Algorithm {
                 }
             }
         }
-
         return ans;
+    }
+
+    public static void main(String[] args) {
+        int[][] A = {{0 , 50 , 39}, {-1 , 0 , 1}, {-1 , 10 , 0},};
+
+        int[][] results = solve(A);
+        PrintUtils.print(results);
     }
 }

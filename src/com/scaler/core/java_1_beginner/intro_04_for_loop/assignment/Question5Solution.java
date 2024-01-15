@@ -25,5 +25,6 @@ public class Question5Solution {
             }
             t--;
         }
+        scn.close();
     }
 }

@@ -56,6 +56,7 @@ public class QuestionHomework1 {
         int result = solve(A);
         System.out.println(result);
         Math.pow(2, 4);
+        in.close();
     }
 
 }

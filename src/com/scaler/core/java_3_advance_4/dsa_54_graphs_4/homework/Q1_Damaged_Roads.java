@@ -1,5 +1,7 @@
 package com.scaler.core.java_3_advance_4.dsa_54_graphs_4.homework;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.*;
 
 /**
@@ -9,7 +11,7 @@ import java.util.*;
  */
 public class Q1_Damaged_Roads {
     //BRUTE FORCE
-    public int solve(int[] A, int[] B) {
+    private static int solve(int[] A, int[] B) {
         int n = A.length;
         int m = B.length;
         int[][] cities = new int[n + 1][m + 1];
@@ -47,7 +49,7 @@ public class Q1_Damaged_Roads {
     }
 
     //OPTIMIZED
-    public int solve_1(int[] A, int[] B) {
+    private static int solve_1(int[] A, int[] B) {
         int n = A.length;
         int m = B.length;
         List<int[]> cost = new ArrayList<>(n + m);
@@ -66,13 +68,24 @@ public class Q1_Damaged_Roads {
 
         for (int[] road : cost) {
             if (road[1] == 0) {
-                minCost = (minCost + (n * road[0])) % mod;
+                minCost = (minCost + ((long) n * road[0])) % mod;
                 m--;
             } else {
-                minCost = (minCost + (m * road[0])) % mod;
+                minCost = (minCost + ((long) m * road[0])) % mod;
                 n--;
             }
         }
         return (int) minCost % mod;
+    }
+
+    public static void main(String[] args) {
+        int[] A = {1, 2, 3};
+        int[] B = {4, 5, 6};
+
+        int result = solve(A, B);
+        PrintUtils.print(result);
+
+        result = solve_1(A, B);
+        PrintUtils.print(result);
     }
 }

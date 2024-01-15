@@ -1,17 +1,19 @@
 package com.scaler.core.java_3_advance_4.dsa_55_graphs_5.assignment;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
+ * @author Deepak Kumar Rai
  * @created 01/04/23 11:37 pm
  * @project scaler_course_code
- * @author Deepak Kumar Rai
  */
 public class Q1_Dijsktra {
-    class Pair {
+    static class Pair {
         int node;
         int weight;
 
@@ -21,7 +23,8 @@ public class Q1_Dijsktra {
         }
     }
 
-    public int[] solve(int A, int[][] B, int C) {
+    @SuppressWarnings("unchecked")
+    private static int[] solve(int A, int[][] B, int C) {
         ArrayList<Pair>[] graph = new ArrayList[A];
         for (int i = 0; i < A; i++) {
             graph[i] = new ArrayList<Pair>();
@@ -45,15 +48,12 @@ public class Q1_Dijsktra {
         });
 
         queue.add(new Pair(C, 0));
-
         while (!queue.isEmpty()) {
             Pair top = queue.remove();
             int nu = top.node;
             int wu = top.weight;
             if (dist[nu] == Integer.MAX_VALUE) {
-
                 dist[nu] = wu;
-
                 for (Pair p : graph[nu]) {
                     int nv = p.node;
                     int wv = p.weight;
@@ -63,12 +63,30 @@ public class Q1_Dijsktra {
                 }
             }
         }
-
         for (int i = 0; i < A; i++) {
             if (dist[i] == Integer.MAX_VALUE) {
                 dist[i] = -1;
             }
         }
         return dist;
+    }
+
+    public static void main(String[] args) {
+        int A = 6;
+        int[][] B = {
+                {0, 4, 9},
+                {3, 4, 6},
+                {1, 2, 1},
+                {2, 5, 1},
+                {2, 4, 5},
+                {0, 3, 7},
+                {0, 1, 1},
+                {4, 5, 7},
+                {0, 5, 1},
+        };
+        int C = 4;
+
+        int[] results = solve(A, B, C);
+        PrintUtils.print(results);
     }
 }

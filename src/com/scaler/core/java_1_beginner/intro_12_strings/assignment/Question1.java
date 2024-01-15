@@ -65,5 +65,6 @@ public class Question1 {
             String str = in.next();
             System.out.println(str.length());
         }
+        in.close();
     }
 }

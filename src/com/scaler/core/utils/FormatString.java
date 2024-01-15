@@ -34,6 +34,7 @@ public class FormatString {
         }
         System.out.println();
         writeReadMeFile(fileName, path);
+        in.close();
     }
 
     private static void writeReadMeFile(String fileName , String path) {

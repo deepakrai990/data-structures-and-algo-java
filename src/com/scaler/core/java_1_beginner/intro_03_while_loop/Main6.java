@@ -56,6 +56,7 @@ public class Main6 {
          		System.out.println(i2);
             }
         	i2 = i2 + 1;
-         }
+        }
+        input.close();
     }
 }

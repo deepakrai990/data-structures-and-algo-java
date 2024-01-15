@@ -21,5 +21,6 @@ public class Main3 {
             System.out.print(i + " ");
             i = i + 1;
         }
+        input.close();
     }
 }

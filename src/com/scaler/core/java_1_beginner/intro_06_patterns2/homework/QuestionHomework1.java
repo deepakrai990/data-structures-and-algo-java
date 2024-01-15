@@ -41,5 +41,6 @@ public class QuestionHomework1 {
             System.out.print("*");
             System.out.println();
         }
+        in.close();
     }
 }

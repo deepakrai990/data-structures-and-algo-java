@@ -17,6 +17,7 @@ public class Q2_Fibonacci_Number {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.print(fib(n));
+        sc.close();
     }
 
     private static int fib(int n) {

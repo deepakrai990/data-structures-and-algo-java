@@ -1,17 +1,19 @@
 package com.scaler.core.java_3_advance_4.dsa_55_graphs_5.homework;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
 /**
+ * @author Deepak Kumar Rai
  * @created 01/04/23 11:39 pm
  * @project scaler_course_code
- * @author Deepak Kumar Rai
  */
 public class Q4_Minimum_Weighted_Cycle {
-    class Node {
+    static class Node {
         int v;
         int wgt;
 
@@ -21,7 +23,7 @@ public class Q4_Minimum_Weighted_Cycle {
         }
     }
 
-    class Pair {
+    static class Pair {
         int a;
         int b;
 
@@ -33,7 +35,7 @@ public class Q4_Minimum_Weighted_Cycle {
 
     HashMap<String, Pair> mapEdge;
 
-    public int solve(int A, int[][] B) {
+    private int solve(int A, int[][] B) {
         mapEdge = new HashMap<>();
         ArrayList<ArrayList<Node>> list = new ArrayList<>();
         int ans = Graph(A, B, list);
@@ -144,5 +146,14 @@ public class Q4_Minimum_Weighted_Cycle {
             }
         }
         return Integer.MAX_VALUE;
+    }
+
+    public static void main(String[] args) {
+        int A = 4;
+        int[][] B = {{1, 2, 2}, {2, 3, 3}, {3, 4, 1}, {4, 1, 4}, {1, 3, 15},};
+
+        Q4_Minimum_Weighted_Cycle solution = new Q4_Minimum_Weighted_Cycle();
+        int result = solution.solve(A, B);
+        PrintUtils.print(result);
     }
 }

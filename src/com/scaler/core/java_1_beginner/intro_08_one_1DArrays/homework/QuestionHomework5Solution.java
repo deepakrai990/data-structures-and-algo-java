@@ -24,5 +24,6 @@ public class QuestionHomework5Solution {
         for (int i = 0; i < n; i++) {
             System.out.print(a[i] + " ");
         }
+        scn.close();
     }
 }

@@ -1,6 +1,8 @@
 package com.scaler.core.java_3_advance_4.dsa_54_graphs_4.assignment;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @created 01/04/23 11:47 pm
@@ -10,7 +12,7 @@ import java.util.ArrayList;
 public class Q3_Capture_Regions_on_Board {
     boolean[][] visited;
 
-    public void solve(ArrayList<ArrayList<Character>> a) {
+    private void solve(ArrayList<ArrayList<Character>> a) {
         int m = a.size();
         int n = a.get(0).size();
         if (m == 1 && n == 1)
@@ -62,5 +64,30 @@ public class Q3_Capture_Regions_on_Board {
         dfs(x, y + 1, m, n, a);
         dfs(x - 1, y, m, n, a);
         dfs(x, y - 1, m, n, a);
+    }
+    public static void printBoard(ArrayList<ArrayList<Character>> board) {
+        for (ArrayList<Character> row : board) {
+            for (char cell : row) {
+                System.out.print(cell + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        ArrayList<ArrayList<Character>> A = new ArrayList<>();
+        A.add(Stream.of('X', 'X', 'X', 'X').collect(Collectors.toCollection(ArrayList::new)));
+        A.add(Stream.of('X', 'O', 'O', 'X').collect(Collectors.toCollection(ArrayList::new)));
+        A.add(Stream.of('X', 'X', 'O', 'X').collect(Collectors.toCollection(ArrayList::new)));
+        A.add(Stream.of('X', 'O', 'X', 'X').collect(Collectors.toCollection(ArrayList::new)));
+
+        System.out.println("Original Board:");
+        printBoard(A);
+
+        Q3_Capture_Regions_on_Board solution = new Q3_Capture_Regions_on_Board();
+        solution.solve(A);
+
+        System.out.println("\nBoard after capturing regions surrounded by 'X':");
+        printBoard(A);
     }
 }

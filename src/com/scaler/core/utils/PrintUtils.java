@@ -33,6 +33,9 @@ public class PrintUtils<T> {
             case "int[][]":
                 print2DArray(result);
                 break;
+            case "boolean[][]":
+                print2DArrayBoolean(result);
+                break;
             case "ArrayList":
                 printList(result);
                 break;
@@ -65,6 +68,9 @@ public class PrintUtils<T> {
     public static <T> void print2DArray(T results) {
         System.out.printf("%s%5s", "Results: ", Arrays.deepToString((int[][]) results));
     }
+    public static <T> void print2DArrayBoolean(T results) {
+        System.out.printf("%s%5s", "Results: ", Arrays.deepToString((boolean[][]) results));
+    }
 
     public static <T> void printList(T A) {
         if (!((ArrayList<?>) A).isEmpty()) {
@@ -83,7 +89,7 @@ public class PrintUtils<T> {
     }
 
     public static <T> void printString(T result) {
-        System.out.printf("%s%5s", "Result: ", result);
+        System.out.printf("%s%5s\n", "Result: ", result);
     }
 
     public static void printBool(boolean result) {

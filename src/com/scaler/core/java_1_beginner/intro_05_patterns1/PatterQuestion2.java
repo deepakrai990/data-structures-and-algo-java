@@ -27,5 +27,6 @@ public class PatterQuestion2 {
             }
             System.out.println();
         }
+        in.close();
     }
 }

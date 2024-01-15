@@ -38,5 +38,6 @@ public class Main4 {
         // iteration required in method 2 -> 5 iterations
 
         // method 2 is efficient
+        input.close();
     }
 }

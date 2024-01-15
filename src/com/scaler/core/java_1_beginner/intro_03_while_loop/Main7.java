@@ -53,5 +53,6 @@ public class Main7 {
 
          total iteration is n
          **/
+        input.close();
     }
 }

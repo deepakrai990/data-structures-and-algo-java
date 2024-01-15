@@ -51,5 +51,6 @@ public class Question6 {
             System.out.print((4 * i) + " ");
             i = i + 1;
         }
+        input.close();
     }
 }

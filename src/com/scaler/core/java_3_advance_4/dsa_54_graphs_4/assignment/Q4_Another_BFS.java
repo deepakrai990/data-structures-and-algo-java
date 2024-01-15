@@ -1,5 +1,7 @@
 package com.scaler.core.java_3_advance_4.dsa_54_graphs_4.assignment;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,17 +13,16 @@ import java.util.Queue;
  * @author Deepak Kumar Rai
  */
 public class Q4_Another_BFS {
-    class Pair {
+    static class Pair {
         Integer nodeVal;
         Integer weight;
-
         public Pair(Integer n, Integer w) {
             nodeVal = n;
             weight = w;
         }
     }
 
-    public int solve(int A, int[][] B, int C, int D) {
+    private static int solve(int A, int[][] B, int C, int D) {
         if (C == D) return 0;
         List<List<Pair>> adj = new ArrayList<>();
         for (int i = 0; i <= A; i++) {
@@ -67,5 +68,15 @@ public class Q4_Another_BFS {
             }
         }
         return -1;
+    }
+
+    public static void main(String[] args) {
+        int A = 6;
+        int[][] B = {{2, 5, 1}, {1, 3, 1}, {0, 5, 2}, {0, 2, 2}, {1, 4, 1}, {0, 1, 1}};
+        int C = 3;
+        int D = 2;
+
+        int result = solve(A, B, C, D);
+        PrintUtils.print(result);
     }
 }

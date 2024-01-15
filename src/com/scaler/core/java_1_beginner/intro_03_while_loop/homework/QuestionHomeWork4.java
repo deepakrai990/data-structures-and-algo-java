@@ -72,5 +72,6 @@ public class QuestionHomeWork4 {
             i = i + 2;
         }
         System.out.print(result);
+        input.close();
     }
 }

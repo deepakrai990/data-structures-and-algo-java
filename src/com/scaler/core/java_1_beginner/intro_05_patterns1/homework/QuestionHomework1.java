@@ -80,5 +80,6 @@ public class QuestionHomework1 {
             }
             System.out.println();
         }
+        in.close();
     }
 }

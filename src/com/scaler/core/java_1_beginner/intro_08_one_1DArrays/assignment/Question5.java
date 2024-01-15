@@ -66,5 +66,6 @@ public class Question5 {
         for(int i = N - 1; i >= 0; i--) {
             System.out.print(A[i] + " ");
         }
+        in.close();
     }
 }

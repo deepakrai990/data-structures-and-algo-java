@@ -23,15 +23,15 @@ public class Q8_Decimal_to_Any_Base {
      * Approach
      * <p>
      * Hint 1
-     * Think about how conversion of one form to another works.
-     * Change digit by digit.
+     * Think about how the conversion of one form to another work
+     * Changes the digit by digit.
      * <p>
      * Solution Approach
-     * Step 1:- Divide the decimal number to be converted by the value of the new base.
-     * Step 2:- Get the remainder from Step 1 as the rightmost digit
+     * Step 1: - Divide the decimal number to be converted by the value of the new base.
+     * Step 2: - Get the remainder from Step 1 as the rightmost digit
      * (the least significant digit) of new base number.
-     * Step 3:− Divide the quotient of the previous divide by the new base.
-     * Step 4 − Record the remainder from Step 3 as the next digit
+     * Step 3: − Divide the quotient of the previous divide by the new base.
+     * Step 4: − Record the remainder from Step 3 as the next digit
      * (to the left) of the new base number.
      **/
     private static int decimalToAnyBase1(int A, int B) {

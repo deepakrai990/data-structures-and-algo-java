@@ -17,11 +17,11 @@ public class Questions1 {
 
         double power = Math.pow(2, 3);
         System.out.println(power);
+        in.close();
     }
 
     private static int solve(int A) {
         double areaInDouble = Math.PI * Math.pow(A, 2);
-        int result = (int) Math.ceil(areaInDouble);
         /*
         String[] numbers = String.valueOf(areaInDouble).split("\\.");
         int result = Integer.valueOf(numbers[0]);
@@ -29,6 +29,6 @@ public class Questions1 {
             result += 1;
         }
         */
-        return result;
+        return (int) Math.ceil(areaInDouble);
     }
 }

@@ -80,5 +80,6 @@ public class Question3 {
             int result = (A * B) / gcd(A, B);
             System.out.println(result);
         }
+        in.close();
     }
 }

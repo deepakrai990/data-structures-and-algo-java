@@ -30,5 +30,6 @@ public class PatterQuestion5 {
             System.out.print("*");
             System.out.println();
         }
+        in.close();
     }
 }

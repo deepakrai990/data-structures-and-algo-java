@@ -76,5 +76,6 @@ public class QuestionHomework3 {
             System.out.print("*");
             System.out.println();
         }
+        in.close();
     }
 }

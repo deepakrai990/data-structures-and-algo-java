@@ -86,5 +86,6 @@ public class QuestionHomework2 {
             }
             System.out.println(found);
         }
+        in.close();
     }
 }

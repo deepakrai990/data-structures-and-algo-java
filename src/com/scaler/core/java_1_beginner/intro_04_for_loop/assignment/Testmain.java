@@ -25,6 +25,7 @@ class Testmain {
         } else {
             System.out.print("No");
         }
+        in.close();
     }
 
     public static boolean isArmstrongNumber(int num) {

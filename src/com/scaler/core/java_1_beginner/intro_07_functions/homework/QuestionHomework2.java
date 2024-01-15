@@ -73,6 +73,7 @@ public class QuestionHomework2 {
         long A = in.nextLong();
         int result = convertBinaryToDecimal(A);
         System.out.print(result);
+        in.close();
     }
 
 

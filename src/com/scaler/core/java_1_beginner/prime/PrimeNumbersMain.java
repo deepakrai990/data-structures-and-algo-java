@@ -13,6 +13,7 @@ public class PrimeNumbersMain {
         int A = input.nextInt();
         System.out.println(isPrime(A));
         System.out.println(isPrime1(A));
+        input.close();
     }
 
     public static boolean isPrime(int n) {

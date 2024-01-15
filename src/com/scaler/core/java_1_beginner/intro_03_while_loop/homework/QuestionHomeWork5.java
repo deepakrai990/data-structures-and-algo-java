@@ -62,5 +62,6 @@ public class QuestionHomeWork5 {
             System.out.print((i * i) + " ");
             i = i + 1;
         }
+        input.close();
     }
 }

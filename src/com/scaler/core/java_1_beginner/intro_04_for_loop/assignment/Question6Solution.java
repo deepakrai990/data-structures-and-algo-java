@@ -43,5 +43,6 @@ public class Question6Solution {
         System.out.println("A========= " + A);
         int result = reverse(A);
         System.out.println(result);
+        in.close();
     }
 }

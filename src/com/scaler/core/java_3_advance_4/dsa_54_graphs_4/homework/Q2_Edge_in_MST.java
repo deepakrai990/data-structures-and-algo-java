@@ -1,5 +1,7 @@
 package com.scaler.core.java_3_advance_4.dsa_54_graphs_4.homework;
 
+import com.scaler.core.utils.PrintUtils;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -9,7 +11,7 @@ import java.util.Comparator;
  * @author Deepak Kumar Rai
  */
 public class Q2_Edge_in_MST {
-    public int[] solve(int A, int[][] B) {
+    private static int[] solve(int A, int[][] B) {
         // Create parent array for Disjoint subset tree
         int[] parent = new int[A + 1];
         // Initially assign self loop for parent
@@ -47,19 +49,26 @@ public class Q2_Edge_in_MST {
         return res;
     }
 
-    int root(int x, int[] parent) {
+    private static int root(int x, int[] parent) {
         if (x == parent[x])
             return x;
         parent[x] = root(parent[x], parent);
         return parent[x];
     }
-
-    boolean makeUnion(int x, int y, int[] parent) {
+    private static boolean makeUnion(int x, int y, int[] parent) {
         int xx = root(x, parent);
         int yy = root(y, parent);
         if (xx == yy)
             return false;
         parent[yy] = xx;
         return true;
+    }
+
+    public static void main(String[] args) {
+        int A = 3;
+        int[][] B = {{1, 2, 2}, {1, 3, 2}, {2, 3, 3},};
+
+        int[] results = solve(A, B);
+        PrintUtils.print(results);
     }
 }

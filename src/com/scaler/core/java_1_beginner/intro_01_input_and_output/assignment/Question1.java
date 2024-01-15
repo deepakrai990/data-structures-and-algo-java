@@ -13,5 +13,6 @@ public class Question1 {
         String A = input.nextLine();
         String B = input.nextLine();
         System.out.print(A + " says Hi to " + B);
+        input.close();
     }
 }
